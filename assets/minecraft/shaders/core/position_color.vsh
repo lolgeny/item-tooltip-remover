@@ -18,8 +18,8 @@ void main() {
     position = gl_Position;
     dis = 0.0;
     if (
-        position.x < 1 && 
+        // position.x < -0.7001 && 
         (position.y > 2.5 || position.y < -0.7) &&
-        position.z > TOOLTIP_Z_MIN && position.z < TOOLTIP_Z_MAX) dis = 10.0e3;
+        position.z > TOOLTIP_Z_MIN && position.z < TOOLTIP_Z_MAX) dis = 100000000.0;
     vertexColor = Color;
 }
