@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": 7,
+        "description": "Hides tooltips that go to the top of the screen, for custom guis"
+    }
+}
