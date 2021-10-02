@@ -3,7 +3,7 @@ Simple shader that removes tooltips on specific items, for custom guis
 
 # How does it work?
 Idea by [@McTsts](https://github.com/McTsts). The shader detects items with a really big lore
-- so big that they take up the whole vertical space of the screen.
+\- so big that they take up the whole vertical space of the screen.
 
 # Features
 - Works in all GUI scales, including 1
