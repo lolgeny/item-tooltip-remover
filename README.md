@@ -11,8 +11,11 @@ Idea by [@McTsts](https://github.com/McTsts). The shader detects items with a re
 
 # Incompatibilities
 - Unfortunately, any items that also go to the edge of the screen through a long lore break.
-The bars on the edge seem to be rendered separaately so doing an x-check has so far failed me, try uncommenting the line in the vsh if you want to try to fix it.
-Then again, why are you making lore that long?
+The bars on the edge seem to be rendered separately, causing many problems.
+
+# Long compat
+If you have an item with (fairly) long lore that's breaking, you can uncomment line 3 in `assets/minecraft/shaders/core/position_color.vsh`.
+This will allow much longer lores to work but there will be a barely visible small dark blue line at the bottom of the screen when hovering over a tooltip removed item.
 
 # How to use
 Simply give yourself an item with the following `display.Lore` (copy the whole thing, there are a lot of spaces):
