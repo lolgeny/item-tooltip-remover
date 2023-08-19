@@ -1,4 +1,4 @@
-#version 440 core
+#version 150 core
 
 #define BOTTOM_Y -0.99
 

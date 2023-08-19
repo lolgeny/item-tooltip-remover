@@ -1,4 +1,4 @@
-#version 440 core
+#version 150 core
 
 in vec4 vertexColor;
 in float dis;
