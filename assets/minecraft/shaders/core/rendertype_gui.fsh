@@ -1,14 +1,22 @@
-#version 150 core
+#version 150
 
 in vec4 vertexColor;
-in float dis;
 
 uniform vec4 ColorModulator;
 
 out vec4 fragColor;
 
+/* Start of custom Code */
+in float dis;
+/* End of custom Code */
+
 void main() {
-    if (dis == 100000000.0) discard;
+    /* Start of custom Code */
+    if (dis == 1) {
+        discard;
+    }
+    /* End of custom Code */
+
     vec4 color = vertexColor;
     if (color.a == 0.0) {
         discard;
