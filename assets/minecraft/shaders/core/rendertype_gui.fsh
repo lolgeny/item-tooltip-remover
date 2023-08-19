@@ -1,18 +1,22 @@
-#version 440 core
-
-#define TOOLTIP_Z_MIN -0.4
-#define TOOLTIP_Z_MAX -0.399
+#version 150
 
 in vec4 vertexColor;
-in vec4 position;
-in float dis;
 
 uniform vec4 ColorModulator;
 
 out vec4 fragColor;
 
+/* Start of custom Code */
+in float dis;
+/* End of custom Code */
+
 void main() {
-    if (dis > 0.1 && position.z > TOOLTIP_Z_MIN && position.z < TOOLTIP_Z_MAX) discard;
+    /* Start of custom Code */
+    if (dis == 1) {
+        discard;
+    }
+    /* End of custom Code */
+
     vec4 color = vertexColor;
     if (color.a == 0.0) {
         discard;
